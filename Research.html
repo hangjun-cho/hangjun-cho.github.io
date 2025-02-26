@@ -1,0 +1,240 @@
+<!--
+    Created by: Hangjun Cho
+    Date: 2025-02-16
+    Description: Personal webpage for academic profile.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Links</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+<!-- <script>
+	MathJax = {
+		tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+	};
+</script> -->
+<script type="text/javascript" id="MathJax-script"
+	async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<!-- <script type="text/javascript" async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+<script>
+MathJax = {
+tex: {
+  tags: 'all'
+}
+};
+</script>
+
+
+<style>
+body { font-size: 90%; }
+
+@media (max-width: 320px) {
+    body { font-size: 60%; }
+}
+
+@media (min-width: 375px) and (max-width: 430px) {
+    body { font-size: 90%; }
+}
+
+@media (min-width: 600px) {
+    body { font-size: 90%; }
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #ffffff;
+	line-height: 1.6;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+ul {
+	padding-left: 2em;
+	margin-top: 5px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+p {
+	margin: 10px 0;
+}
+
+.divider {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+.top-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.affiliation {
+	font-size: 1.2em;
+	flex: 1;
+}
+
+.profile-img-container {
+	flex: 0 0 auto;
+	margin: 0 30px;
+}
+
+.profile-img {
+	max-width: 150px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.website-link {
+      font-size: inherit;
+      color: inherit;
+      margin-top: 5px;
+      text-decoration: none;
+    }
+
+.website-link:hover {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.website-link2 {
+      font-size: inherit;
+      color: inherit;
+      margin-top: 5px;
+      text-decoration: none;
+	  text-decoration: underline;
+	  text-underline-offset: 3px;
+    }
+
+</style>
+
+<style>
+	li {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+.arxiv {
+	  font-size: inherit;
+      color: rgb(225, 55, 78);
+      margin-top: 5px;
+      text-decoration: none;
+      /* text-align: center; */
+      /* padding: 14.5px 16px; */
+      /* text-decoration: none; */
+      /* border-bottom: 2px solid transparent; */
+}
+.arxiv:hover {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+</style>
+
+<style>
+.half-space {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.journal {
+	font-size: inherit;
+	color: rgb(71, 52, 241);
+	margin-top: 5px;
+	text-decoration: none;
+	/* text-align: center; */
+	/* padding: 14.5px 16px; */
+	/* text-decoration: none; */
+	/* border-bottom: 2px solid transparent; */
+}
+.journal:hover {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+</style>
+
+</head>
+
+<body>
+<!-- <div class="divider"></div> -->
+<div class="container">
+<span style="font-size:1.2em;">
+<b>Data-driven approach to complex system</b><br>
+<ul>
+	Data-driven methods are useful in real-world applications and in model interpretation.
+</ul>
+<ul><i>Glassy dynamics</i>.
+The <a href="https://en.wikipedia.org/wiki/Kuramoto_model" target="_blank" class="website-link2">Kuramoto system</a> exhibits various phenomena depending on the network structure and the coupling between oscillators. One interesting phenomenon is the glassy behavior of the order parameter, which emerges when the interaction matrix has high rank. The reason behind this phenomenon remains an open question. 
+Instead, we numerically analyze the low-dimensional structure of this glassy behavior in the Kuramoto system using Extended <a href="https://en.wikipedia.org/wiki/Dynamic_mode_decomposition" target="_blank" class="website-link2">Dynamic Mode Decomposition</a> (EDMD) and identify a signature of this feature. Furthermore, EDMD can be viewed as a Galerkin approximation of the Koopman operator. We explore the connection between the glassy behavior and the continuum equation, linking it to the Koopman operator of the Kuramoto system.
+</ul>
+<ol type="I">
+	<li>
+		Zachary G. Nicolaou, Hangjun Cho, Yuanzhao Zhang, J. Nathan Kutz and Steven L. Brunton,
+		<i><a class="website-link">
+			Signature of glassy dynamics in dynamic modes decompositions</a></i>,
+			<a href="https://arxiv.org/abs/2502.10918" target="_blank" class="arxiv">
+				arXiv</a>
+	</li>
+	</ol>
+</span>
+</div>	
+
+
+
+<div class="divider"></div>
+<div class="container">
+	<span style="font-size:1.2em;">
+	<b>Mathematical analysis of collective behavior</b><br>
+	<ul>
+		In nature, many collective behaviors are observed, and some have been modeled using differential equations. Proving numerical results for such differential equations is challenging but important.
+	</ul>
+	<ul>
+		<i>Inertial Kuramoto model</i>. The <a href="https://en.wikipedia.org/wiki/Kuramoto_model" target="_blank" class="website-link2">Kuramoto model</a> is a well-known synchronization model for \(N\) limit-cycle oscillators with phases \(\theta\), each of which has its own natural frequency \(\nu_i\). When considering an all-to-all network connection, this model is described by the following differential equations: for each \(i=1,\ldots,N\),
+		\[
+		\label{eq:example}
+		\dot{\theta}_i(t) = \nu_i + \frac{\kappa}{N}\sum_{j=1}^N \sin(\theta_j(t) - \theta_i(t)),\quad t>0,
+		\]
+		where \(\kappa\) is the coupling stength. Here, we consider the inertial effect of each oscillator, and the model is represented by the following system: for each \(i=1,\ldots,N\),
+		\[
+		\label{eq:example2}
+		m\ddot{\theta}_i(t) + \gamma\dot{\theta}_i(t) = \nu_i + \frac{\kappa}{N}\sum_{j=1}^N \sin(\theta_j(t) - \theta_i(t)),\quad t>0,
+		\]
+		where \(m\) is the inertia and \(\gamma\) is the damping coefficient.
+		This model was developed to describe the synchronization of a specific type of firefly and transient stability in power systems.
+		From numerical simulations, one can easily observe phase-locking in both systems, meaning that \(\exists\lim_{t\to\infty} (\theta_i(t)-\theta_j(t))\) for each \((i,j).\) However, proving this is challenging, especially when each initial phase is randomly distributed on the limit cycle. A recent study provides a proof of this for the first-order system \(\eqref{eq:example}\). In the work I, we present the counterpart of that result for the second-order system \(\eqref{eq:example2}\).
+		<br><span class="half-space"></span>
+		On the other hand, when \(m\) is large, the second-order system exhibits a distinct feature—an infinite number of phase overlaps on the unit circle (works I,II). This can be regarded as a generalization of the damped pendulum equation since, in the two-oscillator regime, the phase difference is governed by the damped pendulum equation. 
+		
+	</ul>
+	<ol type="I">
+		<li>
+			Hangjun Cho, Jiu-Gang Dong, Seung-Yeal Ha and Seung-Yeon Ryoo,
+			<i><a class="website-link">
+				Asymptotic phase-locking of the inertial Kuramoto model in the large coupling and small inertia regime</a></i>,
+				forthcoming.
+		</li>
+		<li>
+			Hangjun Cho, Jiu-Gang Dong and Seung-Yeal Ha, 
+			<i><a class="website-link">
+				Cardinality of collisions in the asymptotic phase-locking for the Kuramoto model with inertia</a></i>,
+				SIAM J. Appl. Dyn. Syst. 22(2), 1472--1501 (2023).
+				<a href="https://doi.org/10.1137/22M1500010" target="_blank" class="journal">
+					journal link</a>
+		</li>
+		</ol>
+	</span>
+</div>	
+	
+</body>
+</html>
+

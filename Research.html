@@ -201,7 +201,7 @@ Instead, we numerically study this glassy behavior using Extended <a href="https
 		In nature, many collective behaviors are observed, and some have been modeled using differential equations. Proving numerical results for such differential equations is challenging but important.
 	</ul> -->
 	<ul>
-		<i>Inertial Kuramoto model</i>. The inertial <a href="https://en.wikipedia.org/wiki/Kuramoto_model" target="_blank" class="website-link2">Kuramoto model</a> is a well-known synchronization model for \(N\) limit-cycle oscillators with phases \(\theta\), each of which has its own natural frequency \(\nu_i\). When considering an all-to-all network connection, this model is described by the following differential equations: for each \(i=1,\ldots,N\),
+		<p><i>Inertial Kuramoto model</i>. The inertial <a href="https://en.wikipedia.org/wiki/Kuramoto_model" target="_blank" class="website-link2">Kuramoto model</a> is a well-known synchronization model for \(N\) oscillators with phases \(\theta\), each of which has its own natural frequency \(\nu_i\). When considering an all-to-all network connection, this model is described by the following differential equations: for each \(i=1,\ldots,N\),
 		<!-- \[
 		\label{eq:example}
 		\dot{\theta}_i(t) = \nu_i + \frac{\kappa}{N}\sum_{j=1}^N \sin(\theta_j(t) - \theta_i(t)),\quad t>0,
@@ -212,16 +212,23 @@ Instead, we numerically study this glassy behavior using Extended <a href="https
 		m\ddot{\theta}_i(t) + \gamma\dot{\theta}_i(t) = \nu_i + \frac{\kappa}{N}\sum_{j=1}^N \sin(\theta_j(t) - \theta_i(t)),\quad t>0,
 		\]
 		where \(m\) is the inertia and \(\gamma\) is the damping coefficient.
-		This model was developed to describe the synchronization of a specific type of firefly and transient stability in power systems.
-		<img src="ikm.gif" alt="simulation image" width="1000" height="400"><br/>
-		From numerical simulations, one can easily observe asymptotic phase-locking, meaning that \(\exists\lim_{t\to\infty} (\theta_i(t)-\theta_j(t))\) for each \((i,j).\)
-		However, proving this is challenging, especially when each initial phase is randomly distributed on the circle. 
+		This model has been applied to describe synchronization phenomena in biological systems (e.g., fireflies) and to study transient stability in power systems.
+		</p>
+
+		<img src="ikm.gif" alt="simulation image" width="800" height="320"><br/>
+
+		<p>From numerical simulations, one can easily observe asymptotic phase-locking, meaning that \(\exists\lim_{t\to\infty} (\theta_i(t)-\theta_j(t))\) for each \((i,j).\)
+			However, proving this is challenging, especially when the initial phases are randomly distributed on the circle.
 		<!-- A recent study provides a proof of this for the first-order system \(\eqref{eq:example}\).  -->
-		In the work I and II, we provide mathematical analysis for the long time behavior of the system \(\eqref{eq:example2}\) with generic initial configurations.
+		We provide mathematical analysis for the long time behavior of the system \(\eqref{eq:example2}\) with generic initial configurations (Work I and II).
 		<!-- we present the counterpart of that result for the second-order system \(\eqref{eq:example2}\). -->
-		<br><span class="half-space"></span>
-		On the other hand, when \(m\) is large, the second-order system exhibits a distinct feature—an infinite number of phase overlaps on the unit circle (works I,III). 
-		This can be regarded as a generalization of the damped pendulum equation since, in the two-oscillator regime, the phase difference is governed by the damped pendulum equation. 
+		<br></p>
+		<!-- <span class="half-space"></span> -->
+
+		<img src="collision.gif" alt="simulation image" width="600" height="600"><br/>
+		
+		On the other hand, when \(m\) is large, the inertial Kuramoto oscillator exhibits a feature distinct from the non-inertial regime -— an infinite number of collisions on the unit circle (Work I and III).
+		This can be regarded as a generalization of the damped pendulum equation, since in the two-oscillator case the phase difference is governed precisely by the damped pendulum equation.
 		
 		
 	</ul>

@@ -96,7 +96,7 @@
       border-bottom: 2px solid transparent;
       white-space: nowrap;
       flex-wrap: nowrap;
-      overflow-x: auto; 
+      /* overflow-x: auto;  */
       margin: 2px; padding: 8px;
       gap: 8px;
     }
@@ -149,6 +149,23 @@
       <a id="pull" href="#"></a>
     </nav>
   </div>
+
+<script>
+    function sendHeight() {
+        const height = document.body.scrollHeight || document.documentElement.scrollHeight;
+        window.parent.postMessage({ type: 'resize-banner', height: height }, '*');
+    }
+
+    // 페이지 로드 및 창 크기 조절 시 실행
+    window.addEventListener('load', sendHeight);
+    window.addEventListener('resize', sendHeight);
+
+    // 화면 확대(Zoom) 및 내부 요소 크기 변화 감지
+    const observer = new ResizeObserver(() => {
+        sendHeight();
+    });
+    observer.observe(document.body);
+</script>
 </body>
 
 </html>
